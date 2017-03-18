@@ -13,15 +13,8 @@ import { WorkComponent } from './work/work.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { GigsComponent } from './gigs/gigs.component';
 import { PressComponent } from './press/press.component';
+import { SocialComponent } from './social/social.component';
 
-const appRoutes: Routes = [
-  { path: 'contact', component: AboutComponent },
-  { path: 'music', component: WorkComponent },
-  { path: 'gigs', component: GigsComponent },
-  { path: 'press', component: PressComponent },
-  { path: '', component: WelcomeComponent },
-  { path: '**', component: PageNotFoundComponent },
-];
 
 @NgModule({
   declarations: [
@@ -34,13 +27,13 @@ const appRoutes: Routes = [
     WorkComponent,
     WelcomeComponent,
     GigsComponent,
-    PressComponent
+    PressComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
