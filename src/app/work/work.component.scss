@@ -1,8 +1,3 @@
-.main {
-  overflow-y: auto;
-  overflow: auto;
-  max-height: 100vh;
-}
 
 .loading {
   display: table;
@@ -15,10 +10,19 @@
   height:100vh;
 
 }
-.video-y {
-  margin-top: 20px;
-  width:100%;
+.ma {
+  margin-top: 10px;
 }
+@media screen and (min-width: 480px) {
+    .extended {
+      width: 100%;
+    }
+}
+.extended {
+  width: 70%;
+  margin: 0 auto;
+}
+
 @-webkit-keyframes rotating /* Safari and Chrome */ {
 from {
   -ms-transform: rotate(0deg);

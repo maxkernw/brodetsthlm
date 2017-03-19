@@ -11,15 +11,15 @@ export class WorkComponent implements OnInit {
   hidden = true;
   show:boolean = false;
   counter= 0;
-  width ="100%"
-  height = "450"
+  width ="70%"
+  height = "250"
 
   constructor() {
   }
 
   ngOnInit() {
     if(window.screen.width < 450) {
-      this.height = "250"
+      this.width = "100%"
     }
   }
 

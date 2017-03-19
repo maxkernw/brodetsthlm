@@ -1,8 +1,10 @@
 <div class="loading-wrapper" [hidden]="show">
   <img class="responsive-img loading rotating text-center" src="./assets/lpsmall.png"/>
 </div>
-<div class="row" [hidden]="!show">
-  <div class="col s12 center video-y">
-    <iframe (load)="onload()" class="col s12" [width]="width" [height]="height" src="https://www.youtube.com/embed/A1bW2GQIOtk" frameborder="0" allowfullscreen></iframe>
+<div class="col s12 ma" [hidden]="!show">
+  <div class="extended" [style.width]="width">
+    <div class="video-container">
+      <iframe (load)="onload()" width="350" height="350" src="https://www.youtube.com/embed/A1bW2GQIOtk" frameborder="0" align="center" allowfullscreen></iframe>
+    </div>
   </div>
 </div>
