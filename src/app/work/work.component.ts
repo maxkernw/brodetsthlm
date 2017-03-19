@@ -19,7 +19,7 @@ export class WorkComponent implements OnInit {
 
   onload(){
     this.counter = this.counter + 1;
-    if(this.counter === 3) {
+    if(this.counter === 1) {
       this.show=true;
     }
   }
