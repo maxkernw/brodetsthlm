@@ -6,11 +6,14 @@
 * You can get the icons to host yourself
 * here: http://simpleicons.org/
 */
-
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
 a {
   border: 0;
-  float:left;
-  padding: 0 0 5px 10%;
+  padding: 0 0 5px 5px;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -32,4 +35,3 @@ img {
 .instagram {
   background-color:#5c3d2e;
 }
-// Customise Icons
