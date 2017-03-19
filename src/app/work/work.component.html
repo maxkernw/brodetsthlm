@@ -3,6 +3,6 @@
 </div>
 <div class="row" [hidden]="!show">
   <div class="col s12 center video-y">
-    <iframe (load)="onload()" class="col s12" width="100%" height="450" src="https://www.youtube.com/embed/A1bW2GQIOtk" frameborder="0" allowfullscreen></iframe>
+    <iframe (load)="onload()" class="col s12" [width]="width" [height]="height" src="https://www.youtube.com/embed/A1bW2GQIOtk" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
