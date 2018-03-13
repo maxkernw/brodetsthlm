@@ -11,6 +11,7 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <style>
@@ -23,11 +24,10 @@
     }
 
     html {
-
-        background-color: #222;
-        animation-name: color;
-        animation-duration: 25s;
+        background: url("./assets/brd_bg.jpg") no-repeat center center fixed;
         animation-iteration-count: infinite;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .grid-item {
@@ -39,26 +39,23 @@
         align-self: center;
     }
 
-    @keyframes color {
-        0% {
-            background-color: #daa520;
-        }
-        25% {
-            background-color: #7F6B39;
-        }
-        50% {
-            background-color: #FFC125;
-        }
-        75% {
-            background-color: #CC9A1E;
-        }
-        100% {
-            background-color: goldenrod;
-        }
+    p {
+        color: black;
     }
 
-    p {
-        color: white;
+    a {
+        color: black;
+    }
+
+    .fa {
+        padding-right: 5px;
+
+        font-size: 30px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+        text-decoration: none;
     }
 
     .videoWrapper {
@@ -82,6 +79,10 @@
         padding: 0;
     }
 
+    .black-text {
+        font-weight: 600;
+    }
+
     .logo {
         margin-top: 10px;
         width: 50%;
@@ -93,6 +94,7 @@
 
     .divider {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 </style>
 
@@ -121,35 +123,25 @@
     <footer class="page-footer transparent">
         <div class="container">
             <div class="row">
-                <div class="col s12 center">
-                    <h5 class="white-text text-responsive">UPCOMING EVENT</h5>
-                    <a class="grey-text text-lighten-3" href="https://popaganda.se/varfest/">POPAGANDA VÅRFEST - FÄRGFABRIKEN</a>
-                    <p>24 MARCH </p>
-                    <a class="grey-text text-lighten-3" href="https://secure.tickster.com/(S(qqodrauagmto222pw0cjng1l))/en-US/JUCAJ7M81JREY04/Shop/Products.aspx">TICKETS</a>
+                <div class="col s12">
+                    <h5 class="black-text text-responsive">UPCOMING EVENT</h5>
+                    <a class="black-text text-lighten-3" href="https://popaganda.se/varfest/">POPAGANDA VÅRFEST - FÄRGFABRIKEN</a>
+                    <p class="black-text">24 MARCH </p>
+                    <a class="black-text text-lighten-3" href="https://secure.tickster.com/(S(qqodrauagmto222pw0cjng1l))/en-US/JUCAJ7M81JREY04/Shop/Products.aspx">TICKETS</a>
                 </div>
-                <div class="col s12 divider"></div>
+                <div class="col s12 divider black"></div>
                 <div class="col s12 m6">
-                    <h5 class="white-text">LINKS</h5>
-                    <ul>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UC8s5FzxrUabEpsuZRWBDIGA">YOUTUBE</a>
-                        </li>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="https://open.spotify.com/artist/15UwmVEsTDGiuT8GWYavlk">SPOTIFY</a>
-                        </li>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="https://www.instagram.com/brodetsthlm/">INSTAGRAM</a>
-                        </li>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="https://www.facebook.com/brodetsthlm/">FACEBOOK</a>
-                        </li>
-                    </ul>
+                    <h5 class="black-text text-responsive">CONTACT</h5>
+                    <p class="black-text">KAMILLA JONSSON</p>
+                    <p class="black-text">kamilla.jonsson_@hotmail.com, +46(0)707355715</p>
                 </div>
                 <div class="col s12 m6">
-                    <h5 class="white-text text-responsive">CONTACT</h5>
-                    <p>KAMILLA JONSSON</p>
-                    <p>kamilla.jonsson_@hotmail.com, +46(0)707355715</p>
-                </div>
+                        <h5 class="black-text">LINKS</h5>
+                        <a class="fa fa-youtube" href="https://www.youtube.com/channel/UC8s5FzxrUabEpsuZRWBDIGA"></a>
+                        <a class="fa fa-spotify" href="https://open.spotify.com/artist/15UwmVEsTDGiuT8GWYavlk"></a>
+                        <a class="fa fa-instagram" href="https://www.instagram.com/brodetsthlm/"></a>
+                        <a href="https://www.facebook.com/brodetsthlm/" class="fa fa-facebook"></a>
+                    </div>
             </div>
         </div>
     </footer>
